@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/edittext_background"
                 android:backgroundTint="@color/white"
-                android:hint="Password"
+                android:hint="       Password"
                 android:textSize="18sp"
                 android:inputType="textPassword"
                 android:gravity="center"

@@ -124,7 +124,7 @@
                 android:backgroundTint="@color/white"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Password"
+                android:hint="       Password"
                 android:inputType="textPassword"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -150,7 +150,7 @@
                 android:backgroundTint="@color/white"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="Confirm Password"
+                android:hint="       Confirm Password"
                 android:inputType="textPassword"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
