@@ -59,6 +59,7 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:tint="@color/black"
         android:src="@drawable/ic_camera"
         android:backgroundTint="@color/color_button"
         app:layout_anchor="@id/bottomAppBar" />

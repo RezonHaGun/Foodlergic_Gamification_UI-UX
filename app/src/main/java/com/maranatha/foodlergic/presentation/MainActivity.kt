@@ -9,6 +9,7 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.maranatha.foodlergic.R
 import com.maranatha.foodlergic.databinding.ActivityMainBinding
@@ -59,6 +60,8 @@ class MainActivity : AppCompatActivity() {
                 R.id.predictCameraFragment,
             ) // Specify top-level destinations
         )
+        val fab = findViewById<FloatingActionButton>(R.id.fab)
+        fab.imageTintList = null // disable tint total
         // Setup ActionBar with Navigation
         setupActionBarWithNavController(navController, appBarConfiguration)
         binding.bottomNavigationView.setupWithNavController(navController)

@@ -42,6 +42,7 @@
         android:layout_marginStart="5dp"
         android:ellipsize="end"
         android:maxLines="1"
+        android:textColor="#585353"
         android:text="Kepiting Saus Padangffffffffff"
         app:layout_constraintStart_toEndOf="@id/tvAllergyLabel"
         app:layout_constraintEnd_toStartOf="@id/tvPoint"
