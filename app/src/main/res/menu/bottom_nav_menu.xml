@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item-->
+<!--        android:id="@+id/ScanCamera"-->
+<!--        android:icon="@drawable/ic_baseline_photo_camera_24"-->
+<!--        android:title="@string/ScanCamera" />-->
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/homeikon"
+        android:title="Home" />
+    <item
+        android:id="@+id/predictGalleryFragment"
+        android:icon="@drawable/scangallery"
+        android:title="@string/ScanGalery" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+    <item
+        android:id="@+id/leaderboardFragment"
+        android:icon="@drawable/leaderboard"
+        android:title="@string/Leaderboard" />
+
+<!--    <item-->
+<!--        android:id="@+id/Reward"-->
+<!--        android:icon="@drawable/ic_dashboard_black_24dp"-->
+<!--        android:title="@string/Reedem_Reward" />-->
+
+    <item
+        android:id="@+id/userProfileFragment"
+        android:icon="@drawable/userprofile"
+        android:title="@string/user_profile" />
+
+</menu>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.maranatha.foodlergic.presentation.splashscreen.SplashFragment"
+        android:label="Splash Screens">
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.maranatha.foodlergic.presentation.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_leaderboardFragment"
+            app:destination="@id/leaderboardFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_predictFragment"
+            app:destination="@id/predictFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_historyFoodScanFragment"
+            app:destination="@id/historyFoodScanFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_rewardFragment"
+            app:destination="@id/rewardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.maranatha.foodlergic.presentation.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_manageAllergiesFragment"
+            app:destination="@id/manageAllergiesFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_predictFragment"
+            app:destination="@id/predictFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.maranatha.foodlergic.presentation.register.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_manageAllergiesFragment"
+            app:destination="@id/manageAllergiesFragment" />
+        <argument
+            android:name="isAnonymous"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.maranatha.foodlergic.presentation.profile.UserProfileFragment"
+        android:label="Profile" >
+        <action
+            android:id="@+id/action_userProfileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_achievementFragment"
+            app:destination="@id/achievementFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_manageAllergiesFragment"
+            app:destination="@id/manageAllergiesFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_addFriendFragment"
+            app:destination="@id/addFriendFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_friendListFragment"
+            app:destination="@id/fragmentFriendList" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderboardFragment"
+        android:name="com.maranatha.foodlergic.presentation.leaderboard.LeaderboardFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/fragment_leaderboard" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.maranatha.foodlergic.presentation.onboarding.OnBoardingFragment"
+        android:label="OnBoarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_manageAllergiesFragment"
+            app:destination="@id/manageAllergiesFragment"
+            app:popUpTo="@id/onBoardingFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_predictFragment"
+            app:destination="@id/predictFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageAllergiesFragment"
+        android:name="com.maranatha.foodlergic.presentation.allergic.ManageAllergiesFragment"
+        android:label="Manage Allergies" >
+        <action
+            android:id="@+id/action_manageAllergiesFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment" />
+
+        <argument
+            android:name="isProfile"
+            app:argType="boolean"
+            android:defaultValue="false" />
+
+        <argument
+            android:name="isAnonymous"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_manageAllergiesFragment_to_predictFragment"
+            app:destination="@id/predictFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rewardFragment"
+        android:name="com.maranatha.foodlergic.presentation.reward.RewardFragment"
+        android:label="Reward"
+        tools:layout="@layout/fragment_reward">
+        <action
+            android:id="@+id/action_rewardFragment_to_detailRewardFragment"
+            app:destination="@id/detailRewardFragment" >
+            <argument
+                android:name="book"
+                app:argType="com.maranatha.foodlergic.domain.models.Book" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailRewardFragment"
+        android:name="com.maranatha.foodlergic.Reward.DetailRewardFragment"
+        android:label="Reward"
+        tools:layout="@layout/fragment_detail_reward">
+        <argument
+            android:name="book"
+            app:argType="com.maranatha.foodlergic.domain.models.Book" />
+    </fragment>
+    <fragment
+        android:id="@+id/predictFragment"
+        android:name="com.maranatha.foodlergic.presentation.predict.PredictFragment"
+        android:label="Scan My Food" >
+        <action
+            android:id="@+id/action_predictFragment_to_predictResultFragment"
+            app:destination="@id/predictResultFragment" />
+        <argument
+            android:name="isAnonymous"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_predictFragment_to_manageAllergiesFragment"
+            app:destination="@id/manageAllergiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/predictResultFragment"
+        android:name="com.maranatha.foodlergic.presentation.predict.PredictResultFragment"
+        android:label="Predict"
+        tools:layout="@layout/fragment_predict_result" >
+        <argument
+            android:name="predictedAllergen"
+            app:argType="string" />
+        <argument
+            android:name="isAllergic"
+            app:argType="boolean" />
+        <argument
+            android:name="imageUri"
+            app:argType="string"/>
+        <argument
+            android:name="isAnonymous"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_predictResultFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:popUpTo="@id/predictResultFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="backToHome"
+            app:argType="boolean"
+            android:defaultValue="false" />
+        <action
+            android:id="@+id/action_predictResultFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/predictResultFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/achievementFragment"
+        android:name="com.maranatha.foodlergic.presentation.achievement.AchievementFragment"
+        android:label="My Achievement" />
+    <fragment
+        android:id="@+id/historyFoodScanFragment"
+        android:name="com.maranatha.foodlergic.presentation.historyfoodscan.HistoryFoodScanFragment"
+        android:label="History Food Scan" />
+    <fragment
+        android:id="@+id/predictCameraFragment"
+        android:name="com.maranatha.foodlergic.presentation.predict.PredictCameraFragment"
+        android:label="Predict Camera"
+        tools:layout="@layout/fragment_predict_camera" >
+        <action
+            android:id="@+id/action_predictCameraFragment_to_predictResultFragment"
+            app:destination="@id/predictResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/predictGalleryFragment"
+        android:name="com.maranatha.foodlergic.presentation.predict.PredictGalleryFragment"
+        android:label="Predict Gallery"
+        tools:layout="@layout/fragment_predict_gallery">
+        <action
+            android:id="@+id/action_predictGalleryFragment_to_predictResultFragment"
+            app:destination="@id/predictResultFragment" />
+    </fragment>
+
+    <!-- Fragment "Received" -->
+    <fragment
+        android:id="@+id/receivedFragment"
+        android:name="com.maranatha.foodlergic.presentation.viewpager.ReceivedFragment"
+        android:label="ReceivedFragment"
+        tools:layout="@layout/fragment_received_add_friend" />
+
+    <!-- Fragment "Sent" -->
+    <fragment
+        android:id="@+id/sentFragment"
+        android:name="com.maranatha.foodlergic.presentation.viewpager.SendFragment"
+        android:label="SentFragment"
+        tools:layout="@layout/fragment_send_add_friend" />
+    <fragment
+        android:id="@+id/addFriendFragment"
+        android:name="com.maranatha.foodlergic.presentation.addfriend.AddFriendFragment"
+        android:label="Add Friend" />
+    <fragment
+        android:id="@+id/fragmentFriendList"
+        android:name="com.maranatha.foodlergic.presentation.friendlist.FriendListFragment"
+        android:label="Friend List"
+        tools:layout="@layout/fragment_friend_list" />
+
+
+</navigation>

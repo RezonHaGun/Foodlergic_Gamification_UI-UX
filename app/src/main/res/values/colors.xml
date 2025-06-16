@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue_highlight">#1565C0</color>
+
+    //custom colors
+
+    <color name="custom_color_primary">#8F9900</color>
+    <color name="custom_color_secondary">#EEE300</color>
+    <color name="custom_color_secondary_light">#213625</color>
+    <color name="custom_color_background"></color>
+    <color name="custom_color_text_primary"></color>
+    <color name="custom_color_text_secondary"></color>
+
+
+    <!-- Primary Colors -->
+    <color name="color_primary">#97DAAF</color>
+    <color name="color_button">#F19A3E</color>
+    <color name="color_button_red">#850000</color>
+    <color name="color_primary_light">#E6F7C7</color>
+    <color name="color_primary_dark">#88C235</color>
+    <color name="color_on_primary">#1E1E1E</color>
+
+
+    <!-- Accent / Secondary -->
+    <color name="blue_secondary">#6DA6D1</color> <!-- modern soft blue -->
+    <color name="blue_secondary_variant">#4A90C2</color>
+    <color name="color_accent_blue">#2196F3</color>
+
+    <!-- Neutrals / Backgrounds -->
+    <color name="color_background">#97DAAF</color>
+    <color name="color_background_wrapper">#3A5A40</color>
+    <color name="color_surface">#F5F5F5</color>
+    <color name="color_outline">#DDDDDD</color>
+    <color name="color_lock_achievement">#505050</color>
+
+    <!-- Status Colors -->
+    <color name="color_success">#4CAF50</color>
+    <color name="color_warning">#FFC107</color>
+    <color name="color_error">#F44336</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="red">#FF0000</color>
+
+</resources>

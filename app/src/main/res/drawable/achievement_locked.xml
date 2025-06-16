@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Example of a simple lock icon -->
+    <path
+        android:fillColor="#888888"
+        android:pathData="M12,2C10.89,2 10,2.89 10,4V7H7C6.45,7 6,7.45 6,8V18C6,18.55 6.45,19 7,19H17C17.55,19 18,18.55 18,18V8C18,7.45 17.55,7 17,7H14V4C14,2.89 13.11,2 12,2Z"/>
+</vector>

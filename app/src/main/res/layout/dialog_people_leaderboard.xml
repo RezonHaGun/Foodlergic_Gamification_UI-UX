@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="25dp"
+    app:cardBackgroundColor="@color/transparent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/view_page_bg_achievement">
+
+        <include
+            android:id="@+id/namepeople"
+            layout="@layout/item_leaderboard_people"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/achievementRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:text="Close"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/color_button"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

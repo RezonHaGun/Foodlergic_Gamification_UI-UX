@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FoodLergic" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorOnPrimary">@color/color_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/blue_secondary</item>
+        <item name="colorSecondaryVariant">@color/blue_secondary_variant</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="buttonStyle">@style/CustomButton</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <!-- Definisikan gaya untuk tombol kustom -->
+    <style name="CustomButton" parent="Widget.MaterialComponents.Button">
+        <!-- Ubah warna latar belakang tombol -->
+        <item name="backgroundTint">#F19A3E</item>
+        <!-- Ubah warna teks tombol agar kontras dengan latar belakang -->
+        <item name="android:textColor">#000000</item> <!-- Putih agar kontras dengan latar belakang oranye -->
+        <!-- Jika Anda ingin efek tekan tombol, bisa tambahkan: -->
+        <item name="rippleColor">#FFB74D</item> <!-- Efek ripple berwarna lebih terang -->
+    </style>
+</resources>

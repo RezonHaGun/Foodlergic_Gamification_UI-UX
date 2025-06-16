@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "875006383769",
+    "project_id": "foodlergicdb",
+    "storage_bucket": "foodlergicdb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875006383769:android:b85741d76a4de4429eca08",
+        "android_client_info": {
+          "package_name": "com.maranatha.foodlergic"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvKt69t2gapOQ_2KicUod-RUHQmEYFtMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

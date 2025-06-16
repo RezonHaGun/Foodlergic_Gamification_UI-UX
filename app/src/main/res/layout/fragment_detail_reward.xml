@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- ImageView for the detail image -->
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="0dp"
+                android:layout_height="600dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/a_001_book" />
+
+            <!-- Back button ImageView -->
+
+            <!-- Card for Progress -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/levelingLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/custom_color_secondary_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/detailImage"
+                app:cardCornerRadius="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/menuList">
+
+                    <TextView
+                        android:id="@+id/rewardProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 / 500 Points"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/levelProgressBar"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                    <com.google.android.material.progressindicator.LinearProgressIndicator
+                        android:id="@+id/levelProgressBar"
+                        android:layout_width="300dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:max="500"
+                        android:progress="50"
+                        app:indicatorColor="@color/color_button"
+                        app:indicatorSize="170dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:trackColor="#E0E0E0"
+                        app:trackThickness="24dp"
+                        app:trackCornerRadius="20dp"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- BlurView with a LinearLayout containing a title and RecyclerView -->
+            <eightbitlab.com.blurview.BlurView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp"
+                app:blurOverlayColor="#90000000"
+                app:layout_constraintTop_toBottomOf="@+id/levelingLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/downloadButton">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <!-- Title TextView -->
+                    <TextView
+                        android:id="@+id/detailReward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textStyle="bold"
+                        android:textSize="30sp"
+                        android:textColor="@color/black" />
+
+                    <!-- RecyclerView -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp" />
+
+                    <TextView
+                        android:id="@+id/summaryText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sample Summary"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp"/>
+
+                </LinearLayout>
+
+            </eightbitlab.com.blurview.BlurView>
+            <Button
+                android:id="@+id/downloadButton"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Download Book"
+                android:backgroundTint="@color/color_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:enabled="false" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
