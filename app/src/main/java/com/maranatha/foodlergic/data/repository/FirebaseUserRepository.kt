@@ -256,7 +256,7 @@ class FirebaseUserRepository @Inject constructor(
             }
         }
 
-        return foodAllergyCount.filterValues { it.first >= 10 }.map { (foodName, pair) ->
+        return foodAllergyCount.filterValues { it.first >= 5 }.map { (foodName, pair) ->
             WarningFood(
                 foodName = foodName,
                 scanCount = pair.first,
